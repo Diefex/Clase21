@@ -7,11 +7,14 @@
 }
 
 #barra-sup {
+    position: sticky;
+    top: 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 1px 1px 0px rgba(0, 0, 0, 0.25);
+    padding: 10px;
 }
 
 #principal {
@@ -33,12 +36,18 @@
 }
 
 #footer {
-    position: absolute;
+    position: sticky;
     bottom: 0;
     background: #222222;
     color: #FFFFFF;
     width: 100%;
     text-align: center;
+}
+
+.buscar {
+    min-width: 26em;
+    padding: 0.5em;
+    font-size: 0.8em;
 }
 
 .barra-perfiles {
@@ -65,10 +74,8 @@
     flex-direction: column;
 
     & .encabezado-historia {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
         border-bottom: 0.4px solid #22222280;
+        padding: 10px;
     }
 
     & .contenido-historia {
@@ -78,4 +85,23 @@
     & .img-historia {
         width: 100%;
     }
+
+    & .comentarios-historia {
+        font-size: 0.5rem;
+    }
+
+    & i {
+        margin: 5px;
+    }
+}
+
+.contenedor-perfil {
+    display: grid;
+    grid-template-columns: max-content 1fr max-content;
+    align-items: center;
+}
+
+.sugerencias {
+    margin-top: 20px;
+    scale: 0.8;
 }

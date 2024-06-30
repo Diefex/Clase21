@@ -12,8 +12,8 @@
     <!-- Barra superior -->
     <nav id="barra-sup">
         <h2>InstaFront</h2>
-        <input type="search" name="buscador" id="buscador">
-        <span>img perfil</span>
+        <input class="buscar" type="search" name="buscador" id="buscador" placeholder="Buscador...">
+        <span><img class="img-perfil" src="./img/imgPerfil.png" alt=""></span>
     </nav>
     <!-- Seccion principal -->
     <div id="principal">
@@ -30,36 +30,66 @@
             </div>
             <!-- Historia -->
             <div class="historia contenedor-borde">
-                <div class="encabezado-historia">
-                    <div>
-                        <span><img class="img-perfil" src="./img/imgPerfil.png" alt=""></span>
-                        <span>Nombre Usuario</span>
-                    </div>
-                    <div>Opciones</div>
+                <div class="encabezado-historia contenedor-perfil">
+                    <span><img class="img-perfil" src="./img/imgPerfil.png" alt=""></span>
+                    <span>Abril Gonzalez</span>
+                    <h2>. . .</h2>
                 </div>
                 <div class="contenido-historia">
                     <div>
                         <img class="img-historia" src="./img/imgPerfil.png" alt="">
                     </div>
-                    <div>barra acciones</div>
-                    <div>me gustas</div>
-                    <div>n comentarios</div>
-                    <div>comentarios</div>
+                    <div>
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-regular fa-comment"></i>
+                        <i class="fa-regular fa-paper-plane"></i>
+                        <i class="fa-regular fa-face-smile"></i>
+                    </div>
+                    <div class="comentarios-historia">
+                        <div>Les gusta a lulipringless y otras personas</div>
+                        <div>Ver los 3,672 comentarios</div>
+                        <div>
+                            <p>Gabriela Mancini Hola! que placer verte en frontend!!</p>
+                            <p>Jonathan Gonzalez Te estabamos esperando!! Vamooh!</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
         <!-- Seccion lateral -->
         <div id="lateral">
-            <div>Perfil Usuario</div>
-            <div>
-                <div>Sugerencias</div>
-                <div>Perfil sugerido</div>
-                <div>Perfil sugerido</div>
+            <div class="contenedor-perfil">
+                <span><img class="img-perfil" src="./img/imgPerfil.png" alt=""></span>
+                <div>
+                    <p>Abrilgonzalez23</p>
+                    <p>A B R I L</p>
+                </div>
+                <a href="#">Cambiar</a>
+            </div>
+            <div class="sugerencias">
+                <div>Sugerencias para ti</div>
+                <div class="contenedor-perfil">
+                    <span><img class="img-perfil" src="./img/imgPerfil.png" alt=""></span>
+                    <div>
+                        <p>Jonathan Gonzalez</p>
+                    </div>
+                    <a href="#">Seguir</a>
+                </div>
+                <div class="contenedor-perfil">
+                    <span><img class="img-perfil" src="./img/imgPerfil.png" alt=""></span>
+                    <div>
+                        <p>Gabriela Mancini</p>
+                    </div>
+                    <a href="#">Seguir</a>
+                </div>
             </div>
         </div>
     </div>
     <!-- Footer -->
     <footer id="footer">Todos los derechos a EQUIPO FRONT</footer>
+
+    <!-- Script para iconos -->
+    <script src="https://kit.fontawesome.com/e1985742ba.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
